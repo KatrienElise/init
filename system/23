@@ -1,0 +1,35 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    23                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/30 14:00:03 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/30 14:22:22 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+#connect ssh server
+
+ssh localhost
+#if no ssh server
+# sudo apt-get install openssh-server ii.
+# sudo service ssh status (to check if it is running) 
+enter yes or y to continue
+
+#to connect new user
+1 create a key pair
+aws ec2 create-key-par --key-name HELLO
+#this outputs a file you need to save 
+2 sudo adduser new_user
+3 sudo su -new_user 
+#this will change the security context to the newuser 
+4 mkdir .ssh
+#this creates a ssh directory in the new_user home directory 
+5 chmod 700 .ssh
+#nog only the new_user can read, write or open the .ssh directory
+6. touch .ssh/authorized_keys
+# create that file in .ssh directory
+7. chmod 600 .ssh/authorized_keys 
+#same as 5

@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    05                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/19 18:24:30 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/29 08:57:54 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+nslookup slash16.org | grep "Address"
+
+## or
+
+dig slas16.org | grep SERVER | awk '{print $3}' | awk -F '[()]' '{print $2}'
+
+# dig gets the DNS for slas16.org, the ip adress is in the server part, 
+# in de derde collum wil je alleen eht deel wat tussen de haakjes staat zien. 

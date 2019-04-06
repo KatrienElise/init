@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    10                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/21 11:03:44 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/29 09:16:52 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+traceroute slash16.org
+
+# traceroute maps the journey that a packet of information undertakes from it's
+# source to it's destination (you can use this to locate where dataloss occurs)

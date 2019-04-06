@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    02                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/17 15:38:15 by kblum         #+#    #+#                  #
+#    Updated: 2019/04/01 10:24:51 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+# broadcast adres is eigen eth adres 
+ifconfig -L en0 | grep "inet" | cut -d " " -f 6
+# cut -d after pipe will  take te second word which is the ip adress. 
+# which adresses are the same, mask.
+# ifoncfig | grep "mask" # shows the submask in hexadecimal 0xff000000
+ping -c2 10.11.255.255 > /dev/null && arp -a | cut -d' ' -f2 | grep 10.11

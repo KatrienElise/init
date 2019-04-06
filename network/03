@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    03                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/17 16:23:30 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/29 08:36:38 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+# is the wifi card en0 of en1 ??
+# networksetup -listallhardwareports shows which en0, or en1 belongs to which port.so en1 is wi-fi and en0 is ethernet.
+ifconfig en1 | awk '/ether/{print $2}'
+
+# en1/en0 is wi-fi card awk prints the value after, and $2 staat voor 2e collum, $1 
+# zal dan bijv ether printen.

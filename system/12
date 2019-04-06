@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    12                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 14:53:15 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/30 12:46:56 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+sudo du -sh /var/
+# du stands for display disk usage
+# -h stand for human readable
+# -s displays an entry for each specified file

@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    06                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/19 18:31:37 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/29 09:00:54 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+less /etc/resolv.conf
+# this will show the same result in a different way.
+
+cat /etc/resolv.conf
+
+# etc/resolv.conf contains the IP of the used DNS

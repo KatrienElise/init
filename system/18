@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    18                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/30 13:39:01 by kblum         #+#    #+#                  #
+#    Updated: 2019/04/01 10:33:25 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+sudo /etc/init.d/ssh stop
+#or
+sudo service ssh stop
+
+#restarting ssh service wont kill existing ssh session. 
+
+kill or killall
+#killall terminates all programs that match the name specified
+#kill takes ther PID
+
+# Exits client ssh.
+exit

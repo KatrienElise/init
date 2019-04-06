@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    21                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 16:22:53 by kblum         #+#    #+#                  #
+#    Updated: 2019/04/01 10:35:23 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+#human users have a UID beginning at 1000, this number is in calum 3. you have to filter out the nobody, i do this in two ways (the nobodies UID is 65543) 
+awk -F$':' '{ if ($3 >= 1000 && $3 < 60000) print $1; }' /etc/passwd
+
+# antoher way to filter out the nobody
+awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd

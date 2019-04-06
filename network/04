@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    04                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/19 18:16:55 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/29 08:48:23 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+netstat -r -n | grep "default" | head -1 | awk '{print $2}'
+
+#netstat -r gives the gateway adress. 
+# -n shows the adress as numbers
+# head -1 simply remove 1 line from the result of grep. 
+# you can use netstat if you want to know why you are not getting connection for example

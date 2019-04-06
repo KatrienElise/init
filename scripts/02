@@ -1,0 +1,17 @@
+#!/bin/bash
+
+arr=`users`
+
+echo "Active users:"
+echo
+echo "$arr" | tr ' ' '\n'
+echo
+
+read -p "Input valid username: " user
+
+if [[ " ${arr[@]} " =~ " ${user} " ]]; then
+	sudo pkill  -u $user
+	sudo deluser $user
+else
+	echo "User '$user' not active."
+fi

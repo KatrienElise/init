@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    20                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 16:12:40 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/30 13:59:30 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+cat /etc/passwd 
+# shows a lot so needs to be cut down the first field is user name, all fields are seperated by : and there are 7 fields
+awk -F':' '{printf $1}' /etc/passwd
+#this is saying that it takes the first collum of the passwd file and that the collums are seperated bye the :

@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    15                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 16:34:27 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/30 13:26:08 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+# you want to find the process ID for the process to know which one to kill
+pgrep wget
+
+# in this case it is the tail
+sudo pkill -f tail
+# this will kill all the processes with tail in it's name.
+# jobs command? or pidof command to find the process id
+#you dont do pkill wget because there could be more wgets running 
+#than you want to take that number and kill it 
+kill 1234

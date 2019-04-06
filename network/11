@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    11                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/29 08:02:49 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/29 09:28:31 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+#nat (network address translation) nat1 is the device that makes connenction between 
+# my local network and bigbad world. 
+
+name is nat1 and ip adress is 10.11.1.254
+
+traveroute slash16.org | sed '2,/end string pattern/d'
+# sed command would replace in the second line end string pattern to d. a bit unclear.

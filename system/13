@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    13                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 14:53:46 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/30 12:50:23 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+top
+ps aux
+
+#top is running, shows you process statistics continuously untill stopped,
+# ps gives same info but single snapshot.ps can also just show processes used by single user.
+# top should be used to see which processes are most active, ps could be used to see which 
+# processes you (or any other user) are running currently. 
+#pgrep looks through the currently running processes and lists the process ID's which match the selection criteria

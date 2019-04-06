@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    10                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 14:45:29 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/30 12:42:17 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+#partition table of drives = tussenschotten die op de disk/drives staan
+
+sudo fdisk -l
+#fdisk does not show size of every partition but show file system type if you put s infront it does show the size
+
+sfdisk
+#sfdisk had more features dan fdisk and can display the size of each parition
+
+parted
+#list out the partitions with details 

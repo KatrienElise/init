@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    06                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 14:35:10 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/30 12:04:19 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+#login is as root, 
+sudo service ssh restart 
+# for each system could by slightly variabel. 
+# ://www.cyberciti.biz/faq/howto-restart-ssh/
+
+#sudo reboot (best only use in single user mode)
+#shutdonw -r now (is what bothe other commands use)
+#init 6

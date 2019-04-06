@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    22                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 16:25:01 by kblum         #+#    #+#                  #
+#    Updated: 2019/04/01 13:44:12 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+sudo adduser username
+# tussen adduser en username [options]
+
+#it will be created in locked state and you will have to unlock and set a password with passwd command.
+# passwd username 

@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    08                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 14:41:31 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/30 12:29:41 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+#RSA = private key based on RSA algorithm
+#command ssh-keygen : will generate a new key pair.
+# you have to choose location to store the keys. press enter, this will be the default location.
+# choose password
+# now your private and public keys will be generated. id_rsa is private and id_rsa.pub is public.
+# they are saved in: it makes folder ssh with in there the two. 
+
+HOME/.ssh/id_dsa     
+HOME/.ssh/id_dsa.pub 
+
+# another option
+~/.ssh/authorized_keys

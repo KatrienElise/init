@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    12                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/29 09:28:50 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/29 10:03:05 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+curl ifconfig.me
+curl ident.me
+185.61.55.68
+#above answer off ip will give me a domain name host (vraag 13) van fmo-solutions.nl.)
+
+# above will show your (public) ip adress.
+
+ipconfig getpacket en0
+10.51.1.4
+# this shows a lot of information, the server_identifier IP) is your dhcp's server ip address

@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    19                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/30 13:54:10 by kblum         #+#    #+#                  #
+#    Updated: 2019/04/01 10:34:04 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+# Daemon
+
+sudo systemctl list-units --type service
+#will give
+systemctl list-units
+#this show all the services that has been loaded at boot and are active now if you 
+# want a list of also non active
+systemctl list-dependencies --type service 
+#or
+systemctl list-units --type service --all

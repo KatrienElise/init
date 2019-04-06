@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    07                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/21 09:58:12 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/29 09:10:17 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+nslookup slash.org
+#this will show you info about the name server.
+#when you look at the non-authoritatve answer you see addresse. 
+#look these up with whois command and all will show amazon.com
+
+whois 54.230.14.27 
+
+answer is amazon.com

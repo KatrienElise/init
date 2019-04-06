@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    07                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/25 14:37:28 by kblum         #+#    #+#                  #
+#    Updated: 2019/03/30 12:06:21 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+# PID = process id
+# sshd will write a PID file
+/var/run/sshd.pid
+#put cat in front to see 
+cat /var/run/sshd.pid
+
+# another option
+# service ssh status | grep 'Main PID' | awk -F '[ ]' '{print $3" " $4}'

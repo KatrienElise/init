@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    13                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/29 09:54:45 by kblum         #+#    #+#                  #
+#    Updated: 2019/04/01 10:29:07 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+#use ip of previous question 10.51.1.4
+
+host 10.51.1.4
+gives: dhcp.codam.nl.
+
+#of 
+
+nslookup 10.51.1.4
+gives: dhcp.codam.nl.
+#last one gives a bit more info as well server and address.
+# both tell you, you can find it in mapp in-addr.arpa 

@@ -1,0 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         ::::::::             #
+#    17                                                 :+:    :+:             #
+#                                                      +:+                     #
+#    By: kblum <marvin@codam.nl>                      +#+                      #
+#                                                    +#+                       #
+#    Created: 2019/03/30 13:29:26 by kblum         #+#    #+#                  #
+#    Updated: 2019/04/01 10:32:39 by kblum         ########   odam.nl          #
+#                                                                              #
+# **************************************************************************** #
+
+#first locate the address atached to VM, public-ip-address, or vm-ip-address
+
+ssh -p <port> user@<ip-address-or-hostname>
+
+#port is the open SSH port for example 22 
+
+#or
+
+chmod 600 KEYFILE
+ssh -p <port> -i KEYFILE name@SERVER-IP
+
+#keyfile should be replaced by the path of my private keyfele and SERVER-IP with the public ip adress or hostname
+of server
+
